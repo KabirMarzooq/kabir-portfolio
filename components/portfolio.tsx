@@ -300,19 +300,7 @@ function Contact() {
       <p className="max-w-md mx-auto mb-6 text-base" style={{ color: "var(--muted)" }}>
         Have a project or opportunity? I&apos;d love to hear from you.
       </p>
-      <button
-        onClick={() => window.open(`mailto:${CONTACT_EMAIL}`, "_blank")}
-        className="inline-block text-sm font-semibold px-5 py-2.5 transition-colors cursor-pointer"
-        style={{
-          borderRadius: "var(--radius)",
-          border: "var(--border-w) solid var(--accent)",
-          background: "var(--accent)",
-          color: "var(--accent-text)",
-          fontFamily: "var(--font-body)",
-        }}
-      >
-        Say Hello
-      </button>
+      <Button filled href={`mailto:${CONTACT_EMAIL}`}>Say Hello</Button>
       <div
         className="flex gap-6 justify-center mt-7 text-[13.5px]"
         style={{ color: "var(--muted)" }}
