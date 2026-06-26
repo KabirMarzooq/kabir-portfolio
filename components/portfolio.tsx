@@ -52,8 +52,6 @@ function Button({
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
       className="inline-block text-sm font-semibold px-5 py-2.5 transition-colors"
       style={{
         borderRadius: "var(--radius)",
@@ -87,8 +85,6 @@ function Nav() {
             <a
               key={n}
               href={`#${n.toLowerCase()}`}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-[13.5px]"
               style={{
                 color: "var(--muted)",
@@ -304,7 +300,19 @@ function Contact() {
       <p className="max-w-md mx-auto mb-6 text-base" style={{ color: "var(--muted)" }}>
         Have a project or opportunity? I&apos;d love to hear from you.
       </p>
-      <Button filled href={`mailto:${CONTACT_EMAIL}`}>Say Hello</Button>
+      <button
+        onClick={() => window.open(`mailto:${CONTACT_EMAIL}`, "_blank")}
+        className="inline-block text-sm font-semibold px-5 py-2.5 transition-colors cursor-pointer"
+        style={{
+          borderRadius: "var(--radius)",
+          border: "var(--border-w) solid var(--accent)",
+          background: "var(--accent)",
+          color: "var(--accent-text)",
+          fontFamily: "var(--font-body)",
+        }}
+      >
+        Say Hello
+      </button>
       <div
         className="flex gap-6 justify-center mt-7 text-[13.5px]"
         style={{ color: "var(--muted)" }}
