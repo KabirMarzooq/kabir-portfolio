@@ -44,14 +44,20 @@ function Button({
   children,
   filled = false,
   href = "#",
+  target,
+  rel,
 }: {
   children: React.ReactNode;
   filled?: boolean;
   href?: string;
+  target?: string;
+  rel?: string;
 }) {
   return (
     <a
       href={href}
+      target={target}
+      rel={rel}
       className="inline-block text-sm font-semibold px-5 py-2.5 transition-colors"
       style={{
         borderRadius: "var(--radius)",
@@ -300,7 +306,14 @@ function Contact() {
       <p className="max-w-md mx-auto mb-6 text-base" style={{ color: "var(--muted)" }}>
         Have a project or opportunity? I&apos;d love to hear from you.
       </p>
-      <Button filled href={`mailto:${CONTACT_EMAIL}`}>Say Hello</Button>
+      <Button
+        filled
+        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Say Hello
+      </Button>
       <div
         className="flex gap-6 justify-center mt-7 text-[13.5px]"
         style={{ color: "var(--muted)" }}
