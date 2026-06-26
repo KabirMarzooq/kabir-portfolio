@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fallback = Botanical, so server render and no-JS both look correct. */
+:root {
+  --bg: #f2f5ee;
+  --surface: #e8efe1;
+  --text: #2c3a2a;
+  --muted: #5f7257;
+  --accent: #5a7a4e;
+  --accent-2: #5a7a4e;
+  --accent-text: #f6faf2;
+  --border: #cdd9c4;
+  --radius: 18px;
+  --border-w: 1px;
+  --card-shadow: 0 6px 24px rgba(50, 80, 40, 0.08);
+  --font-display: var(--font-baskerville), Georgia, serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --label-transform: uppercase;
+  --label-tracking: 0.2em;
+  --label-weight: 600;
+  --label-size: 11px;
+  --tag-bg: #e8efe1;
+  --tag-text: #42613a;
+  --tag-border: #cdd9c4;
+  --tag-radius: 999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* thin scrollbar for the switcher strip */
+.vibe-scroll::-webkit-scrollbar { height: 6px; }
+.vibe-scroll::-webkit-scrollbar-thumb { background: #d0d0d6; border-radius: 8px; }
