@@ -78,7 +78,7 @@ function Nav() {
           className="text-lg font-bold"
           style={{ fontFamily: "var(--font-display)", color: "var(--accent)" }}
         >
-          {theme.prompt ? "kabir@dev" : "Kabir"}
+          {theme.prompt ? "markabir8@gmail.com" : "Marzooq Kabir"}
         </span>
         <div className="hidden sm:flex gap-6">
           {NAV.map((n) => (
@@ -123,7 +123,7 @@ function Hero() {
               className="text-base leading-7 pt-4"
               style={{ color: "var(--muted)", borderTop: "2px solid var(--accent)" }}
             >
-              Full-stack developer shipping real products — from SaaS platforms to hospital systems.
+              Full-stack developer shipping real products — from SaaS platforms to backend systems.
             </p>
             <div className="flex gap-3 mt-5">
               <Button filled href="#work">View Work</Button>
@@ -152,7 +152,7 @@ function Hero() {
           {theme.prompt && (
             <span style={{ color: "var(--accent)" }}>{theme.prompt}</span>
           )}
-          Hi, I&apos;m Kabir.
+          Hi, I&apos;m Marzooq Kabir.
         </h1>
         <p
           className={`text-[17px] leading-7 mb-7 ${center ? "mx-auto" : ""} max-w-xl`}
@@ -195,7 +195,7 @@ function About() {
           style={{ fontFamily: "var(--font-display)", color: "var(--text)" }}
         >
           A 300-level Computer Engineering student at Federal University Lokoja, building toward a
-          career as an AI &amp; full-stack developer. I design, build, and ship — real products,
+          career as an AI &amp; full-stack developer. I design, build, and ship — real products for
           real users.
         </p>
       </div>
@@ -320,7 +320,7 @@ function Footer() {
       className="py-5.5 text-center text-[12.5px]"
       style={{ borderTop: "var(--border-w) solid var(--border)", color: "var(--muted)" }}
     >
-      © {new Date().getFullYear()} Kabir — currently &quot;{theme.name}&quot;
+      © {new Date().getFullYear()} Marzooq Kabir — currently &quot;{theme.name}&quot;
     </div>
   );
 }

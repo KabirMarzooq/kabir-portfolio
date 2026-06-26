@@ -28,8 +28,12 @@ const fontVars = [
 ].map((f) => f.variable).join(" ");
 
 export const metadata: Metadata = {
-  title: "Kabir — Developer",
+  title: "Marzooq Kabir — Developer",
   description: "Computer Engineering student & full-stack developer. Ten looks, one portfolio.",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/icon.png", type: "image/png" }],
+  },
 };
 
 const VAR_MAP = Object.fromEntries(THEMES.map((t) => [t.id, themeToVars(t)]));
