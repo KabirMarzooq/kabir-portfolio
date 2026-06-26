@@ -52,6 +52,8 @@ function Button({
   return (
     <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="inline-block text-sm font-semibold px-5 py-2.5 transition-colors"
       style={{
         borderRadius: "var(--radius)",
@@ -85,6 +87,8 @@ function Nav() {
             <a
               key={n}
               href={`#${n.toLowerCase()}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[13.5px]"
               style={{
                 color: "var(--muted)",
@@ -242,6 +246,8 @@ function Work() {
             <a
               key={p.name}
               href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex gap-5 p-6"
               style={{
                 background: "var(--bg)",
@@ -304,7 +310,7 @@ function Contact() {
         style={{ color: "var(--muted)" }}
       >
         {SOCIALS.map((s) => (
-          <a key={s.label} href={s.href}>
+          <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer">
             {s.label}
           </a>
         ))}
